@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Interactive Campus Parking Map";
+}
+
+<div class="container">
+    <h2 class="my-4">@ViewData["Title"]</h2>
+    
+    <div class="card shadow">
+        <div class="card-body">
+            <div class="mb-3">
+                <p class="text-muted small mb-2">Select a parking category to filter:</p>
+                <div class="btn-group" role="group" aria-label="Filter buttons">
+                    <button type="button" class="btn btn-primary btn-sm active" id="filter-all">All Lots</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" id="filter-student">Student</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" id="filter-faculty">Faculty/Staff</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" id="filter-visitor">Visitor</button>
+                    <button type="button" class="btn btn-outline-primary btn-sm" id="filter-reserved">Reserved</button>
+                </div>
+            </div>
+            
+            <!-- Map Container -->
+            <div id="map" style="width: 100%; height: 500px;" class="rounded"></div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/map.js"></script>
+    <script>
+        // Filter functionality
+        document.querySelectorAll('[id^="filter-"]').forEach(button => {
+            button.addEventListener('click', function() {
+                // Reset all buttons
+                document.querySelectorAll('[id^="filter-"]').forEach(btn => {
+                    btn.classList.remove('btn-primary');
+                    btn.classList.remove('active');
+                    btn.classList.add('btn-outline-primary');
+                });
+                
+                // Highlight active button
+                this.classList.remove('btn-outline-primary');
+                this.classList.add('btn-primary');
+                this.classList.add('active');
+                
+                // Get filter value from button id
+                const filter = this.id.replace('filter-', '');
+                
+                // Store selected filter in sessionStorage
+                sessionStorage.setItem('parkingFilter', filter);
+                
+                // For a full implementation, reload the map with filtered data
+                // We would need to modify the map.js to handle filters
+                console.log(`Filter selected: ${filter}`);
+            });
+        });
+        
+        // Check if there's a stored filter preference
+        document.addEventListener('DOMContentLoaded', function() {
+            const storedFilter = sessionStorage.getItem('parkingFilter');
+            if (storedFilter) {
+                document.getElementById(`filter-${storedFilter}`)?.click();
+            }
+        });
+    </script>
+}

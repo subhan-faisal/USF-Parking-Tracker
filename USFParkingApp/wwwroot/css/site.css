@@ -1,0 +1,87 @@
+/* USF Color Scheme */
+:root {
+  --usf-green: #006747;
+  --usf-gold: #CFC493;
+}
+
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+.text-success {
+  color: var(--usf-green) !important;
+}
+
+.bg-success {
+  background-color: var(--usf-green) !important;
+}
+
+.btn-primary {
+  background-color: var(--usf-green);
+  border-color: var(--usf-green);
+}
+
+.btn-primary:hover {
+  background-color: #004d35;
+  border-color: #004d35;
+}
+
+.btn-outline-primary {
+  color: var(--usf-green);
+  border-color: var(--usf-green);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--usf-green);
+  border-color: var(--usf-green);
+}
+
+/* Map specific styles */
+.custom-div-icon {
+  background: none;
+  border: none;
+}
+
+/* Card shadows and hover effects */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Sticky footer styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 240px; /* Approximate height of footer */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-bottom: 480px; /* Larger footer on mobile */
+  }
+}
+
+/* Navigation active link */
+.navbar-light .navbar-nav .nav-link.active {
+  color: var(--usf-green);
+}
