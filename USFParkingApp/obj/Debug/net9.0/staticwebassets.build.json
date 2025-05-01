@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w8T4tICbCkbVBudF+4xq7aM7JE+2WCbVblVLSn+oD0c=",
+  "Hash": "o3p7ksF8m0wjJ1Wl8kY5e2itoHuMVn8avCWLkbNcT2E=",
   "Source": "USFParkingApp",
   "BasePath": "_content/USFParkingApp",
   "Mode": "Default",
@@ -1543,8 +1543,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1gq7gpkf2n",
-      "Integrity": "X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY=",
+      "Fingerprint": "gm48ljhvvr",
+      "Integrity": "aPr+anqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR+A=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/team/subhan.jpeg"
@@ -3696,7 +3696,7 @@
       ]
     },
     {
-      "Route": "images/team/subhan.1gq7gpkf2n.jpeg",
+      "Route": "images/team/subhan.gm48ljhvvr.jpeg",
       "AssetFile": "/Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/wwwroot/images/team/subhan.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3706,7 +3706,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "871776"
+          "Value": "153861"
         },
         {
           "Name": "Content-Type",
@@ -3714,11 +3714,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY=\""
+          "Value": "\"aPr+anqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR+A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:18:58 GMT"
+          "Value": "Thu, 01 May 2025 05:20:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3728,7 +3728,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "1gq7gpkf2n"
+          "Value": "gm48ljhvvr"
         },
         {
           "Name": "label",
@@ -3736,7 +3736,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY="
+          "Value": "sha256-aPr+anqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR+A="
         }
       ]
     },
@@ -3751,7 +3751,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "871776"
+          "Value": "153861"
         },
         {
           "Name": "Content-Type",
@@ -3759,11 +3759,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY=\""
+          "Value": "\"aPr+anqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR+A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Apr 2025 20:18:58 GMT"
+          "Value": "Thu, 01 May 2025 05:20:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3773,7 +3773,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY="
+          "Value": "sha256-aPr+anqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR+A="
         }
       ]
     },

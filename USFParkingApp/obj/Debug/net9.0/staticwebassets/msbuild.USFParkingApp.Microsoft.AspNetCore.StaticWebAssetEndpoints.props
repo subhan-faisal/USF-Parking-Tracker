@@ -60,17 +60,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ytmkxqfc28"},{"Name":"integrity","Value":"sha256-lgmAtbafkv9vuJ2MJ3uX788JSJ9XKrmsNh0PzSsXTi8="},{"Name":"label","Value":"_content/USFParkingApp/images/team/ronia.jpeg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"30457"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022lgmAtbafkv9vuJ2MJ3uX788JSJ9XKrmsNh0PzSsXTi8=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 20:14:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/USFParkingApp/images/team/subhan.1gq7gpkf2n.jpeg">
+    <StaticWebAssetEndpoint Include="_content/USFParkingApp/images/team/subhan.gm48ljhvvr.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\team\subhan.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1gq7gpkf2n"},{"Name":"integrity","Value":"sha256-X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY="},{"Name":"label","Value":"_content/USFParkingApp/images/team/subhan.jpeg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"871776"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 20:18:58 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"gm48ljhvvr"},{"Name":"integrity","Value":"sha256-aPr\u002BanqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR\u002BA="},{"Name":"label","Value":"_content/USFParkingApp/images/team/subhan.jpeg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"153861"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aPr\u002BanqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR\u002BA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 May 2025 05:20:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/USFParkingApp/images/team/subhan.jpeg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\team\subhan.jpeg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"871776"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 20:18:58 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aPr\u002BanqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR\u002BA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"153861"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022aPr\u002BanqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR\u002BA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 01 May 2025 05:20:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/USFParkingApp/js/map.9m3w5narkn.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\map.js'))</AssetFile>

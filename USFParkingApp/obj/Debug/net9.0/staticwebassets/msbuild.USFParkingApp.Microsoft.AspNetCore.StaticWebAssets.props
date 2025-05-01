@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1gq7gpkf2n</Fingerprint>
-      <Integrity>X2p1cdPXjm6doKyERUHTdNCMPnpQPLl7cN9oOAFluXY=</Integrity>
+      <Fingerprint>gm48ljhvvr</Fingerprint>
+      <Integrity>aPr+anqWBkRsk5v85BXJgOYBklgIaI4ODtPk0mVNR+A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\team\subhan.jpeg'))</OriginalItemSpec>

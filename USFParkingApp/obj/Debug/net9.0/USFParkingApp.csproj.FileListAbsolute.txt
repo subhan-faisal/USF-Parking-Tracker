@@ -228,3 +228,4 @@
 /Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/obj/Debug/net9.0/USFParkingApp.pdb
 /Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/obj/Debug/net9.0/USFParkingApp.genruntimeconfig.cache
 /Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/obj/Debug/net9.0/ref/USFParkingApp.dll
+/Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/obj/Debug/net9.0/USFParkingApp.sourcelink.json
