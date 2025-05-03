@@ -23,7 +23,7 @@ namespace USFParkingTracker.Models
         [Range(0, 10000)]
         public int AvailableSpaces { get; set; }
         
-        [Required]
+        // [Required]
         public string Status { get; set; } = string.Empty;  // "open", "limited", "full", "closed"
         
         public Coordinates? Coordinates { get; set; }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/USFParkingApp.csproj": {}
+    "C:\\Users\\mojtabaa\\OneDrive - University of South Florida\\Ronia\\Web App\\4_web_app_faisal\\USF-Parking-Tracker\\USFParkingApp\\USFParkingApp.csproj": {}
   },
   "projects": {
-    "/Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/USFParkingApp.csproj": {
+    "C:\\Users\\mojtabaa\\OneDrive - University of South Florida\\Ronia\\Web App\\4_web_app_faisal\\USF-Parking-Tracker\\USFParkingApp\\USFParkingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/USFParkingApp.csproj",
+        "projectUniqueName": "C:\\Users\\mojtabaa\\OneDrive - University of South Florida\\Ronia\\Web App\\4_web_app_faisal\\USF-Parking-Tracker\\USFParkingApp\\USFParkingApp.csproj",
         "projectName": "USFParkingApp",
-        "projectPath": "/Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/USFParkingApp.csproj",
-        "packagesPath": "/Users/subhanfaisal/.nuget/packages/",
-        "outputPath": "/Users/subhanfaisal/Desktop/App Dev for analytics/Final Project/USFParkingApp/USFParkingApp/obj/",
+        "projectPath": "C:\\Users\\mojtabaa\\OneDrive - University of South Florida\\Ronia\\Web App\\4_web_app_faisal\\USF-Parking-Tracker\\USFParkingApp\\USFParkingApp.csproj",
+        "packagesPath": "C:\\Users\\mojtabaa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mojtabaa\\OneDrive - University of South Florida\\Ronia\\Web App\\4_web_app_faisal\\USF-Parking-Tracker\\USFParkingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/subhanfaisal/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\mojtabaa\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

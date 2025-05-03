@@ -36,14 +36,14 @@ namespace USFParkingTracker.Controllers
         {
             if (ModelState.IsValid)
             {
+                // your normal saving logic
                 parkingLot.CreatedAt = DateTime.Now;
                 parkingLot.UpdatedAt = DateTime.Now;
                 parkingLot.Status = ParkingLot.DetermineStatus(parkingLot.AvailableSpaces, parkingLot.TotalSpaces);
-                
+
                 _context.Add(parkingLot);
                 await _context.SaveChangesAsync();
-                
-                // Create an event
+
                 _context.ParkingEvents.Add(new ParkingEvent
                 {
                     ParkingLotId = parkingLot.Id,
@@ -52,10 +52,45 @@ namespace USFParkingTracker.Controllers
                     Details = $"Parking lot {parkingLot.Name} created with {parkingLot.TotalSpaces} total spaces"
                 });
                 await _context.SaveChangesAsync();
-                
+
                 return RedirectToAction(nameof(Index));
             }
-            return View(parkingLot);
+            else
+            {
+                // 🔍 Add this debug print block
+                foreach (var key in ModelState.Keys)
+                {
+                    var state = ModelState[key];
+                    foreach (var error in state.Errors)
+                    {
+                        Console.WriteLine($"ModelState error in '{key}': {error.ErrorMessage}");
+                    }
+                }
+                return View(parkingLot);
+            }
+
+            // if (ModelState.IsValid)
+            // {
+            //     parkingLot.CreatedAt = DateTime.Now;
+            //     parkingLot.UpdatedAt = DateTime.Now;
+            //     parkingLot.Status = ParkingLot.DetermineStatus(parkingLot.AvailableSpaces, parkingLot.TotalSpaces);
+                
+            //     _context.Add(parkingLot);
+            //     await _context.SaveChangesAsync();
+                
+            //     // Create an event
+            //     _context.ParkingEvents.Add(new ParkingEvent
+            //     {
+            //         ParkingLotId = parkingLot.Id,
+            //         EventType = "creation",
+            //         Timestamp = DateTime.Now,
+            //         Details = $"Parking lot {parkingLot.Name} created with {parkingLot.TotalSpaces} total spaces"
+            //     });
+            //     await _context.SaveChangesAsync();
+                
+            //     return RedirectToAction(nameof(Index));
+            // }
+            // return View(parkingLot);
         }
 
         // GET: Manage/Edit/5
@@ -125,6 +160,16 @@ namespace USFParkingTracker.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+            foreach (var key in ModelState.Keys)
+            {
+                var state = ModelState[key];
+                foreach (var error in state.Errors)
+                {
+                    Console.WriteLine($"ModelState error in '{key}': {error.ErrorMessage}");
+                }
+            }
+            
             return View(parkingLot);
         }
 
