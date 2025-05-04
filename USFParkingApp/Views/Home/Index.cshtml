@@ -30,13 +30,13 @@
             </div>
             
             <div class="text-right mt-3">
-                <p class="text-muted small">Last updated: @Model.Stats.LastUpdated.ToString("MMM dd, yyyy 'at' h:mm tt")</p>
-                <form asp-controller="Home" asp-action="RefreshData" method="post">
-                    <button type="submit" class="btn btn-primary btn-sm">
-                        <i class="bi bi-arrow-repeat"></i> Refresh Data
-                    </button>
-                </form>
+                <p id="lastUpdated" class="text-muted small">Last updated: @Model.Stats.LastUpdated.ToString("MMM dd, yyyy 'at' h:mm tt")</p>
+                <p id="pageLastUpdated" class="text-muted small">Page Last Updated: never</p> 
+                <button id="refreshButton" class="btn btn-primary btn-sm">
+                    <i class="bi bi-arrow-repeat"></i> Refresh Data
+                </button>
             </div>
+
         </div>
     </div>
     
@@ -179,3 +179,96 @@
         };
     }
 }
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const refreshButton = document.getElementById('refreshButton');
+    const lastUpdatedElem = document.getElementById('lastUpdated');
+    const pageLastUpdatedElem = document.getElementById('pageLastUpdated');
+    const parkingLotCards = document.querySelectorAll('.card'); // Select all parking lot cards
+
+    if (refreshButton) {
+        refreshButton.addEventListener('click', async () => {
+            try {
+                // Fetch fresh data from the backend (API)
+                const response = await fetch('/api/parking-lots');
+                const data = await response.json();
+
+                // Update each parking lot card with new data
+                data.forEach(lot => {
+                    const card = document.getElementById(`lot-card-${lot.Id}`); // Assuming each card has a unique id
+                    if (card) {
+                        // Update the "Available Spaces"
+                        const availableSpacesElem = card.querySelector('.available-spaces');
+                        if (availableSpacesElem) {
+                            availableSpacesElem.textContent = `${lot.AvailableSpaces} / ${lot.TotalSpaces}`;
+                        }
+
+                        // Update the "Status"
+                        const statusElem = card.querySelector('.lot-status');
+                        if (statusElem) {
+                            statusElem.textContent = lot.Status.toUpperCase();
+                            statusElem.classList = `h5 ${getStatusTextColor(lot.Status)}`; // Update text color based on status
+                        }
+
+                        // Update the "Progress bar" width and text
+                        const progressBar = card.querySelector('.progress-bar');
+                        if (progressBar) {
+                            const availabilityPercentage = lot.TotalSpaces > 0 
+                                ? (lot.AvailableSpaces / lot.TotalSpaces) * 100 
+                                : 0;
+                            progressBar.style.width = `${availabilityPercentage}%`;
+                            progressBar.setAttribute('aria-valuenow', availabilityPercentage);
+                        }
+                    }
+                });
+
+                // Update "Last updated" time with current time (for data)
+                const now = new Date();
+                const formattedTime = now.toLocaleString("en-US", {
+                    weekday: "short", 
+                    year: "numeric", 
+                    month: "short", 
+                    day: "numeric", 
+                    hour: "2-digit", 
+                    minute: "2-digit",
+                    hour12: true
+                });
+                if (lastUpdatedElem) {
+                    lastUpdatedElem.innerText = `Last updated: ${formattedTime}`;
+                }
+
+                // Update "Page Last Updated" with the current time (refresh time)
+                const refreshTime = now.toLocaleString("en-US", {
+                    weekday: "short", 
+                    year: "numeric", 
+                    month: "short", 
+                    day: "numeric", 
+                    hour: "2-digit", 
+                    minute: "2-digit",
+                    hour12: true
+                });
+                if (pageLastUpdatedElem) {
+                    pageLastUpdatedElem.innerText = `Page Last Updated: ${refreshTime}`;
+                }
+
+            } catch (err) {
+                console.error("Refresh failed:", err);
+            }
+        });
+    }
+});
+
+// Helper functions to determine color based on status
+function getStatusTextColor(status) {
+    switch (status) {
+        case 'open': return 'text-success';
+        case 'limited': return 'text-warning';
+        case 'full': return 'text-danger';
+        case 'closed': return 'text-secondary';
+        default: return 'text-primary';
+    }
+}
+
+</script>
+
