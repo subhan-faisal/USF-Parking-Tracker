@@ -4,7 +4,8 @@
 
 <div class="container">
     <h2 class="my-4">@ViewData["Title"]</h2>
-    
+
+    <!-- Team Members -->
     <div class="card shadow mb-4">
         <div class="card-body">
             <div class="row">
@@ -45,20 +46,67 @@
                          style="max-width: 150px;">
                     <h5>Chandar Rathala</h5>
                     <p class="text-muted">Backend Architect</p>
-                    <p class="small">Responsible for OpenMap API integration and data processing.</p>
+                    <p class="small">Responsible for database architecture, backend implementation, and OpenMap API integration and data processing.</p>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- Rest of your code remains the same -->
-    <div class="row">
-        <div class="col-md-6 mb-4">
-            <!-- Technical Details card content -->
+
+    <!-- Technical Details Section -->
+    <div class="card shadow mb-4">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Technical Details</h5>
         </div>
-        
-        <div class="col-md-6 mb-4">
-            <!-- Data Model card content -->
+        <div class="card-body">
+
+            <!-- 1(a) API Integration -->
+            <h6><strong>API Integration</strong></h6>
+            <p>
+                We integrated with the <strong>Parking API via RapidAPI</strong> to gather real-time data on parking locations, prices, and availability.
+                This data enhances our internal database, ensuring users have the most up-to-date parking options.
+            </p>
+
+            <!-- Logical Data Model -->
+            <h6 class="mt-4"><strong>Logical Data Model</strong></h6>
+            <p>
+                How our entities relate behind the scenes:
+            </p>
+            <div class="text-center">
+                <img src="~/images/team/data-model.png" alt="Logical Data Model" class="img-fluid mb-2" style="max-width: 100%;">
+                <p class="small text-muted">
+                    🔑 PK = Primary Key &nbsp;&nbsp; 🔗 FK = Foreign Key &nbsp;&nbsp; ⚡ Computed Fields<br>
+                    One ParkingLot ↔ Many ParkingActivity ↔ One User
+                </p>
+            </div>
+
+            <!-- CRUD Implementation -->
+            <h6 class="mt-4"><strong>CRUD Implementation</strong></h6>
+            <ul>
+                <li><strong>Create:</strong> Users can add new parking reservations and save favorites.</li>
+                <li><strong>Read:</strong> Users can view available spots, their reservations, and favorites.</li>
+                <li><strong>Update:</strong> Users can modify reservations (e.g., time, duration).</li>
+                <li><strong>Delete:</strong> Users can cancel reservations or remove favorites.</li>
+            </ul>
+
+            <!-- Technical Stack -->
+            <h6 class="mt-4"><strong>Technical Stack</strong></h6>
+            <ul>
+                <li><strong>Frontend:</strong> React, TypeScript, Tailwind CSS, Shadcn UI</li>
+                <li><strong>Backend:</strong> ASP.NET Core (C#)</li>
+                <li><strong>Database:</strong> SQL Server using Entity Framework Core</li>
+                <li><strong>Architecture:</strong> MVC Pattern with Repository Design</li>
+                <li><strong>Deployment:</strong> Azure Web App Service</li>
+            </ul>
+
+            <!-- GitHub Repository -->
+            <h6 class="mt-4"><strong>GitHub Repository</strong></h6>
+            <p>
+                View the source code on GitHub: <br />
+                <a href="https://github.com/subhan-faisal/USF-Parking-Tracker.git" target="_blank">
+                    https://github.com/subhan-faisal/USF-Parking-Tracker.git
+                </a>
+            </p>
+
         </div>
     </div>
 </div>

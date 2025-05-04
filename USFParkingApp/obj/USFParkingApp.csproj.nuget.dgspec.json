@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\USF-Parking-Tracker\\USFParkingApp\\USFParkingApp.csproj": {}
+    "/Users/chandarrathala/Desktop/USF-Parking-Tracker/USFParkingApp/USFParkingApp.csproj": {}
   },
   "projects": {
-    "C:\\Code\\USF-Parking-Tracker\\USFParkingApp\\USFParkingApp.csproj": {
+    "/Users/chandarrathala/Desktop/USF-Parking-Tracker/USFParkingApp/USFParkingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\USF-Parking-Tracker\\USFParkingApp\\USFParkingApp.csproj",
+        "projectUniqueName": "/Users/chandarrathala/Desktop/USF-Parking-Tracker/USFParkingApp/USFParkingApp.csproj",
         "projectName": "USFParkingApp",
-        "projectPath": "C:\\Code\\USF-Parking-Tracker\\USFParkingApp\\USFParkingApp.csproj",
-        "packagesPath": "C:\\Users\\baker\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\USF-Parking-Tracker\\USFParkingApp\\obj\\",
+        "projectPath": "/Users/chandarrathala/Desktop/USF-Parking-Tracker/USFParkingApp/USFParkingApp.csproj",
+        "packagesPath": "/Users/chandarrathala/.nuget/packages/",
+        "outputPath": "/Users/chandarrathala/Desktop/USF-Parking-Tracker/USFParkingApp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\baker\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/chandarrathala/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -90,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
