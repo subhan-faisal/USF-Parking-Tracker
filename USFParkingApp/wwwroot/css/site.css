@@ -85,3 +85,8 @@ footer {
 .navbar-light .navbar-nav .nav-link.active {
   color: var(--usf-green);
 }
+
+/* Table styles */
+table .badge {
+  color: #fff !important;
+}
