@@ -13,23 +13,35 @@ A comprehensive parking management web application providing intelligent, user-c
 - **Responsive Design**: Optimized for mobile, tablet, and desktop devices
 - **University of Tampa Integration**: Special highlighting and features for University of Tampa parking locations
 
-## 🛠️ Technology Stack
+## 🚀 Tech Stack
 
-### Frontend
-- React.js with TypeScript for type safety
-- Tailwind CSS for modern, responsive styling
-- Shadcn UI components for consistent design
-- React Hook Form with Zod validation
-- Leaflet.js for interactive maps
-- Recharts for data visualization
-- TanStack Query (React Query) for efficient data fetching
+### 🔷 Frontend
 
-### Backend
-- Node.js with Express.js API framework
-- PostgreSQL database with Drizzle ORM
-- Session-based authentication with Passport.js
-- REST API architecture
-- Stripe payment integration
+- **HTML/CSS**
+- **JavaScript**
+- **Bootstrap** – for responsive UI components  
+- **jQuery** – with **jQuery Validation** for client-side form validation  
+- **Leaflet.js** – for interactive map rendering
+
+### 🛠️ Backend
+
+- **ASP.NET Core 9.0** –
+- **C#** – primary backend language
+- **Entity Framework Core 9.0** – for database access and ORM
+- **Microsoft SQL Server** – configured via `Microsoft.Data.SqlClient`
+
+### 🧱 Architecture & Patterns
+
+- **MVC (Model-View-Controller)** – layered application structure
+- **Repository Pattern** – decouples business logic from data access
+- **Entity Framework Code First** – model-driven database schema (see `Migrations/`)
+- **RESTful API** – built under `Api/ParkingLotsController.cs`
+
+### 💻 Development Tools
+
+- **Visual Studio** or **Visual Studio Code**
+- **EF Core CLI Tools** – for managing migrations and database schema
+- **Git** – for version control and collaboration
 
 ### Alternative Implementation
 - ASP.NET Core with C# (conversion available in the codebase)
@@ -118,14 +130,36 @@ The application features a fully responsive design that adapts to different scre
 - Input validation with Zod schemas
 - Secure payment processing with Stripe
 
-## 🌟 Team Members
 
+## 🌟 Team Members & Reflections
 
-- Jennifer Negron - >Home Page and CRUD Navigation
-- Ronia Arabian - Responsible for backend architecture and Azure deployment
-- Subhan Faisal - Responsive Layout & Styling, API and Azure deployment.
-- Chandar Rathala -Responsible for database architecture, backend implementation, and OpenMap API integration and data processing.
+### Jennifer Negron
+- **Role**: Home Page and CRUD Navigation
+- **Time Spent**: ~40 hours
+- **Key Learnings**: Mastered React components, learned state management
+- **Challenges**: Implementing real-time updates for parking availability
+- **Improvements**: Suggest implementing WebSocket for real-time updates
 
+### Ronia Arabian
+- **Role**: Backend Architecture and Deployment
+- **Time Spent**: ~45 hours
+- **Key Learnings**: Gained expertise in ASP.NET Core and Entity Framework
+- **Challenges**: Setting up proper database relationships and migrations
+- **Improvements**: Implement caching for better performance
+
+### Subhan Faisal
+- **Role**: Responsive Layout & Styling, API Integration
+- **Time Spent**: ~35 hours
+- **Key Learnings**: Advanced Tailwind CSS, responsive design patterns
+- **Challenges**: Cross-browser compatibility issues
+- **Improvements**: Add more automated testing for UI components
+
+### Chandar Rathala
+- **Role**: Database Architecture and OpenMap Integration
+- **Time Spent**: ~42 hours
+- **Key Learnings**: Spatial data handling, API integration
+- **Challenges**: Optimizing database queries for map data
+- **Improvements**: Implement clustering for map markers
 ## 📄 License
 
 This project was created as part of a Dynamic Web Application Development course at the University of South Florida.
